@@ -1,0 +1,45 @@
+.form {
+  margin-bottom: 5px;
+}
+
+.label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  height: calc(var(--index) * 4);
+  width: calc(var(--index) * 30);
+  border: none;
+  border-bottom: 3px solid gray;
+  outline: none;
+  font-size: calc(var(--index) * 1.8);
+  font-weight: bold;
+  background: #e6e6e6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input:focus{
+  border-bottom: 3px solid aqua;
+  background: #fff;
+}
+
+.input:focus + .btn {
+  border-bottom: 3px solid aqua;
+  background: #fff;
+}
+
+.btn {
+  position: absolute;
+  height: calc(var(--index) * 4);
+  width: calc(var(--index) * 6);
+  border: none;
+  border-bottom: 3px solid gray;
+  border-left: 1px solid gray;
+    background: #e6e6e6;
+  right: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
